@@ -87,7 +87,7 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){ dataLayer.push(arguments); }
     gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXXXX');
+    gtag('config', 'G-XXXXXXXXXX');        
     // Evento CTA — añade data-track="cta" data-label="nombre" en cada botón
     document.addEventListener('DOMContentLoaded', () => {
       document.querySelectorAll('[data-track="cta"]').forEach(el => {
@@ -1202,8 +1202,10 @@
       <div class="cal-wrap rev d2">
         <div class="cal-ph">
           <div class="cal-ph__ico" aria-hidden="true"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div>
-          <p class="cal-ph__t">Widget de Calendly</p>
-          <p class="cal-ph__s">Reemplaza este bloque con el embed. Color primario: <code>#2b1d10</code> · Fondo: <code>#ede6d9</code></p>
+          <!-- Calendly inline widget begin -->
+<div class="calendly-inline-widget" data-url="https://calendly.com/mario-serranodsg/30min?background_color=2b1d10&primary_color=ede6d9" style="min-width:320px;height:700px;"></div>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Calendly inline widget end -->
         </div>
       </div>
     </div>
