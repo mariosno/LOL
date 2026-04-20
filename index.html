@@ -684,17 +684,13 @@
        CALENDLY
     ══════════════════════════════════════════ */
     .cal-sec { background: var(--parchment); }
-    .cal-wrap { margin-top: 50px; border: 1px solid var(--stone); overflow: hidden; }
-    .cal-ph {
-      height: 600px; background: var(--cream);
-      display: flex; flex-direction: column;
-      align-items: center; justify-content: center; gap: 16px;
-      border: 2px dashed var(--stone);
-    }
-    .cal-ph__ico { width: 50px; height: 50px; border: 1px solid var(--stone); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--fog); }
-    .cal-ph__t { font-family: var(--serif); font-size: 1.3rem; color: var(--espresso); }
-    .cal-ph__s { font-size: .78rem; color: var(--fog); text-align: center; max-width: 340px; line-height: 1.75; }
-    .cal-ph__s code { font-size: .68rem; background: var(--parchment); padding: 4px 9px; color: var(--sienna); }
+.cal-wrap {
+  margin-top: 50px;
+  border: 1px solid var(--stone);
+  overflow: hidden;
+  height: 80vh; /* 👈 clave */
+}
+  
 
     /* ══════════════════════════════════════════
        FAQ
