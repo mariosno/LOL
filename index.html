@@ -646,10 +646,11 @@
       background: linear-gradient(145deg, #5C3D2E 0%, #3D2B1F 55%, #8B5E3C 100%);
       position: relative;
     }
-    .about-img__inner::after {
-      content: ''; position: absolute; inset: 0;
-      background: repeating-linear-gradient(45deg, rgba(196,164,74,.045) 0, rgba(196,164,74,.045) 1px, transparent 0, transparent 36px);
-    }
+    .about-img__inner {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
     .about-img__frame {
       position: absolute; bottom: -13px; right: -13px;
       width: calc(100% - 18px); height: calc(100% - 18px);
@@ -1144,7 +1145,7 @@
     <div class="wrap">
       <div class="about-grid">
         <div class="about-img rev">
-          <div class="about-img__inner"></div>
+<img src="./assets/estudio.jpg" class="about-img__inner" alt="Serrano Brand Studio">
           <div class="about-img__frame" aria-hidden="true"></div>
         </div>
         <div>
